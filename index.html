@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="css/style.css">
     <!-- Box Icon -->
     <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.0/css/boxicons.min.css">
+    <!-- Swiper CSS File Link -->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
 </head>
 <body>
     <!-- Header -->
@@ -20,7 +22,7 @@
             <a href="index.html" class="logo">Game<span>Store</span></a>
             <!-- Nav Icons -->
             <div class="nav-icons">
-                <i class="bx bx-bell" id="bell-icon"></i>
+                <i class="bx bx-bell bx-tada" id="bell-icon"><span></span></i>
                 <i class="bx bxs-download"></i>
                 <div class="menu-icon">
                     <div class="line1"></div>
@@ -28,8 +30,64 @@
                     <div class="line3"></div>
                 </div>
             </div>
+            <!-- Menu -->
+            <div class="menu">
+                <img src="img/menu.png" alt="">
+                <div class="navbar">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#trending">Trending</a></li>
+                    <li><a href="#new">New Games</a></li>
+                    <li><a href="#action">Action Games</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </div>
+            </div>
+            <!-- Notification -->
+            <div class="notification">
+                <div class="notification-box">
+                    <i class="bx bxs-check-circle"></i>
+                    <p>Congratlation, Your game download sucessfully.</p>
+                </div>
+                <div class="notification-box box-color">
+                    <i class="bx bxs-x-circle"></i>
+                    <p>Could not apply changes.</p>
+                </div>
+            </div>
         </div>
     </header>
+    <!-- Home Section Start -->
+    <section class="home container">
+        <img src="img/home.png" alt="">
+        <div class="home-text">
+            <h1>CITY OF THE <br> FUTURE</h1>
+            <a href="#" class="btn">Available Now</a>
+        </div>
+    </section>
+    <!-- Home Section End -->
+    <!-- Trending Section Start -->
+    <section class="trending container" id="trending">
+        <div class="heading">
+            <i class="bx bxs-flame"></i>
+            <h2>Trending Games</h2>
+        </div>
+        <!-- Content -->
+        <div class="trending-content swiper">
+            <div class="box">
+                <img src="img/trending1.webp" alt="">
+                <div class="box-text">
+                    <h2>Cyberpunk 2077</h2>
+                    <h3>Action</h3>
+                    <div class="rating-download">
+                        <div class="rating">
+                            <i class="bx bxs-star"></i>
+                            <span>4.7</span>
+                        </div>
+                        <a href="#" class="box-btn"><i class="bx bx-down-arrow-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Trending Section End -->
 
 
 
@@ -38,7 +96,8 @@
 
 
 
-
+    <!-- Link to Swiper File -->
+    <script src="js/swiper-bundle.min.js"></script>r
     <!-- Link to JS -->
     <script src="js/main.js"></script>
 </body>
