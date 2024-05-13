@@ -321,6 +321,51 @@ header{
 .new-content {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(240px, auto));
-    gap: 1.2rem;
-    
+    gap: 1.2rem;   
+}
+.next-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+}
+.next-page a {
+    background: var(--main-color);
+    padding: 12px 20px;
+    color: var(--text-color);
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+.next-page a:hover{
+    background: var(--light-color);
+    transition: .3s all linear;
+}
+.copyright{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+.copyright p {
+    font-size: .9rem;
+    color: var(--text-color);
+}
+
+/* Download Page */
+.video-container video{
+    width: 100%;
+    aspect-ratio: 16/9;
+}
+.video-container {
+    margin-top: 5rem;
+}
+.about {
+    display: inline-flex;
+    font-size: 1.4rem;
+    font-weight: 500;
+    border-radius: 4px solid var(--main-color);
+}
+.about p {
+    font-size: .938rem;
+    margin-top: 1rem;
+    text-align: justify;
 }
